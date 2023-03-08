@@ -1,0 +1,8 @@
+<div class="w-full space-y-4 h-full min-h-screen bg-stone-900 text-gray-200 flex justify-center items-center flex-col">
+  <app-test></app-test>
+  <input type="text" (change)="formChange(textInput)" value="{{inputValue}}" id="item-input" #textInput class="rounded-md bg-stone-600 border-stone-800 border-2 p-2" />
+  <div class="flex space-x-12 py-8">
+    <button [content]="textInput.value" ui-plain-button></button>
+    <button [content]="'test'" ui-fill-button></button>
+  </div>
+</div>

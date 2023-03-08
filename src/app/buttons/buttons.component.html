@@ -1,0 +1,8 @@
+<div *ngIf="content !== ''">
+  <button-fill (newClickEvent)="clickEvent($event)" *ngIf="attribute === 'ui-fill-button'">
+    {{content}}
+  </button-fill>
+  <button-plain *ngIf="attribute === 'ui-plain-button'">
+    {{content}}
+  </button-plain>
+</div>
